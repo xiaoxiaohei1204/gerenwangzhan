@@ -314,33 +314,62 @@ h3 {
 
 .portrait-wrap {
   position: relative;
+  transition: transform 220ms ease;
+}
+
+.portrait-wrap::before,
+.portrait-wrap::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.portrait-wrap::before {
+  top: -26px;
+  left: -34px;
+  width: 140px;
+  height: 140px;
+  border-radius: 42% 58% 52% 48% / 48% 44% 56% 52%;
+  background: rgba(233, 111, 98, 0.18);
+}
+
+.portrait-wrap::after {
+  right: -42px;
+  bottom: 38px;
+  width: 170px;
+  height: 170px;
+  border-radius: 52% 48% 44% 56% / 46% 54% 46% 54%;
+  background: rgba(118, 200, 207, 0.2);
 }
 
 .portrait-frame {
   position: relative;
-  aspect-ratio: 4 / 5;
+  z-index: 1;
+  aspect-ratio: 1 / 1;
   overflow: hidden;
   border: 1px solid rgba(23, 22, 20, 0.3);
   border-radius: 30px;
   background: #fff;
   box-shadow: 0 22px 46px rgba(82, 62, 37, 0.14);
+  transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
 }
 
 .portrait-frame::before,
 .portrait-frame::after {
   content: "";
   position: absolute;
-  z-index: 2;
+  z-index: 0;
   border: 1px solid rgba(23, 22, 20, 0.22);
 }
 
 .portrait-frame::before {
-  top: 18px;
-  left: 18px;
+  top: 16px;
+  left: 16px;
   width: 74px;
   height: 74px;
   border-radius: 24px 38px 28px 42px;
-  background: rgba(233, 111, 98, 0.72);
+  background: rgba(233, 111, 98, 0.45);
   mix-blend-mode: multiply;
 }
 
@@ -350,29 +379,33 @@ h3 {
   width: 96px;
   height: 32px;
   border-radius: 999px;
-  background: rgba(118, 200, 207, 0.78);
+  background: rgba(118, 200, 207, 0.5);
 }
 
 .portrait-frame img {
+  position: relative;
+  z-index: 1;
+  display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center top;
+  object-fit: contain;
+  object-position: center center;
   filter: saturate(0.96) contrast(1.04);
+  transition: transform 260ms ease, filter 260ms ease;
 }
 
-.portrait-label {
-  position: absolute;
-  right: -18px;
-  bottom: 34px;
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  padding: 12px 14px;
-  color: var(--paper);
-  background: var(--ink);
-  border-radius: 999px;
-  transform: rotate(-3deg);
+.portrait-wrap:hover {
+  transform: translateY(-8px) rotate(-0.8deg);
+}
+
+.portrait-wrap:hover .portrait-frame {
+  border-color: rgba(23, 22, 20, 0.42);
+  box-shadow: 0 30px 64px rgba(82, 62, 37, 0.2);
+}
+
+.portrait-wrap:hover .portrait-frame img {
+  transform: scale(1.025);
+  filter: saturate(1.02) contrast(1.05);
 }
 
 .featured-strip {
@@ -667,10 +700,6 @@ h3 {
 
   .featured-strip {
     grid-template-columns: 1fr;
-  }
-
-  .portrait-label {
-    right: 10px;
   }
 
   .timeline div {
