@@ -1,25 +1,223 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-CN">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>李顺章 | 个人作品网站</title>
-<style>
-:root{--paper:#f6f1e7;--ink:#151515;--red:#ff4f40;--cyan:#34b9c5;--lime:#c7e54a;--blue:#3048ff;--line:rgba(21,21,21,.18);--muted:#756f66}*{box-sizing:border-box}body{margin:0;min-height:100vh;color:var(--ink);font-family:Arial,"Microsoft YaHei","PingFang SC",sans-serif;background:linear-gradient(90deg,rgba(21,21,21,.05) 1px,transparent 1px) 0 0/42px 42px,linear-gradient(rgba(21,21,21,.04) 1px,transparent 1px) 0 0/42px 42px,var(--paper)}button,a{font:inherit;color:inherit}button{cursor:pointer}.shell{padding:22px;min-height:100vh}.top{display:grid;grid-template-columns:auto 1fr auto;gap:18px;align-items:center;max-width:1280px;margin:auto;padding:10px;border:1px solid var(--line);background:rgba(246,241,231,.86);backdrop-filter:blur(16px)}.brand{display:flex;gap:8px;align-items:center;min-height:44px;padding:0 14px;border:2px solid var(--ink);font-weight:900;text-decoration:none}.brand i{width:10px;height:10px;background:var(--red);transform:rotate(45deg)}.tabs{display:flex;justify-content:center;gap:6px}.tab,.lang,.btn,.detail{min-height:44px;padding:0 16px;border:1px solid var(--line);background:rgba(255,255,255,.38);transition:.16s}.tab{min-width:96px}.tab:hover,.lang:hover,.btn:hover,.detail:hover{transform:translateY(-2px);border-color:var(--ink)}.tab.on,.btn.dark{color:var(--paper);background:var(--ink);border-color:var(--ink)}.lang{min-width:112px}.lang b{margin-left:10px;color:var(--red)}.stage{position:relative;max-width:1280px;min-height:calc(100vh - 116px);margin:22px auto 0;border:1px solid var(--line);background:rgba(246,241,231,.88);box-shadow:0 22px 60px rgba(0,0,0,.16);overflow:hidden}.shape{position:absolute;pointer-events:none}.a{top:6%;right:9%;width:min(26vw,280px);aspect-ratio:1;border:28px solid var(--cyan);clip-path:polygon(50% 0,100% 38%,78% 100%,10% 78%,0 18%);opacity:.68}.b{left:2%;bottom:8%;width:min(23vw,250px);height:86px;background:var(--lime);transform:rotate(-12deg);mix-blend-mode:multiply}.c{right:24%;bottom:6%;width:130px;height:130px;border:3px solid var(--blue);transform:rotate(18deg)}.panel{position:relative;z-index:2;display:none;min-height:calc(100vh - 116px);padding:clamp(28px,5vw,72px);animation:show .24s ease both}.panel.on{display:block}.home.on{display:grid;grid-template-columns:minmax(280px,.9fr) minmax(300px,.82fr) minmax(220px,.5fr);gap:clamp(24px,4vw,54px);align-items:center}@keyframes show{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}.eyebrow{margin:0 0 16px;color:var(--red);font-size:13px;font-weight:900;text-transform:uppercase}h1,h2,h3,p{overflow-wrap:anywhere}h1{margin:0;font-size:clamp(68px,11vw,152px);line-height:.88}h2{margin:0 0 16px;font-size:clamp(42px,8vw,96px);line-height:.92}h3{margin:0 0 12px;font-size:22px}.lead{max-width:460px;margin:26px 0 0;font-size:clamp(22px,3vw,38px);line-height:1.12;font-weight:800}.actions,.work-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}.btn.lime{background:var(--lime);border-color:var(--ink)}.portrait-wrap{position:relative}.portrait{position:relative;aspect-ratio:4/5;border:3px solid var(--ink);background:#fff;overflow:hidden}.head{position:absolute;left:21%;top:15%;width:58%;height:56%;border:4px solid #111;border-radius:48% 48% 44% 44%;background:#ffd6bd}.hair{position:absolute;left:17%;top:10%;width:66%;height:27%;border-radius:50% 50% 35% 35%;background:#171514;box-shadow:22px 8px 0 #262321,-26px 14px 0 #0f0e0d}.ear{position:absolute;top:40%;width:9%;height:13%;border:3px solid #111;border-radius:50%;background:#ffc3a8}.ear.l{left:15%}.ear.r{right:15%}.eye{position:absolute;top:44%;width:8%;height:4%;border-radius:50%;background:#211b1b}.eye.l{left:34%}.eye.r{right:34%}.brow{position:absolute;top:39%;width:15%;height:3%;border-radius:999px;background:#111}.brow.l{left:29%;transform:rotate(-10deg)}.brow.r{right:29%;transform:rotate(10deg)}.nose{position:absolute;left:49%;top:49%;width:5%;height:13%;border-right:4px solid #c78470;border-radius:50%}.mouth{position:absolute;left:39%;top:67%;width:22%;height:3%;border-bottom:5px solid #7b2f2f;border-radius:50%}.neck{position:absolute;left:39%;top:70%;width:22%;height:16%;background:#ffd6bd;border-left:3px solid #111;border-right:3px solid #111}.shirt{position:absolute;left:31%;bottom:0;width:38%;height:22%;background:#f8f8f8;clip-path:polygon(0 0,50% 42%,100% 0,88% 100%,12% 100%)}.suit{position:absolute;left:12%;bottom:-1%;width:76%;height:30%;background:#111;clip-path:polygon(0 35%,35% 0,50% 100%,65% 0,100% 35%,100% 100%,0 100%)}.portrait:before,.portrait:after{content:"";position:absolute;z-index:3;border:2px solid var(--ink)}.portrait:before{top:18px;left:18px;width:74px;height:74px;background:var(--red);mix-blend-mode:multiply}.portrait:after{right:20px;bottom:20px;width:96px;height:32px;background:var(--cyan)}.label{position:absolute;right:-18px;bottom:34px;display:flex;gap:14px;padding:12px 14px;color:var(--paper);background:var(--ink);transform:rotate(-4deg)}.mini,.story,.resume,.work,.contact,.qr{border:1px solid var(--ink);background:rgba(255,255,255,.44)}.strip{display:grid;gap:14px}.mini{min-height:164px;padding:18px}.mini span,.meta,.contact span{color:var(--muted);font-size:13px;font-weight:800;text-transform:uppercase}.mini strong{display:block;margin:26px 0 10px;font-size:24px}.mini p,.headblock p,.story p,.resume p,.work p,.qr p{line-height:1.72}.headblock{max-width:780px;margin-bottom:34px}.headblock p:last-child{margin:0;color:#393530;font-size:18px}.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:18px}.story,.resume{padding:clamp(22px,3vw,34px)}.story{background:var(--lime)}.timeline{display:grid;gap:18px}.timeline div{display:grid;grid-template-columns:86px 1fr;gap:16px;border-top:1px solid var(--line);padding-top:16px}.timeline time{font-weight:900}.timeline p{margin:0}.works{display:grid;gap:16px}.work{display:grid;grid-template-columns:minmax(180px,.42fr) 1fr;min-height:230px;overflow:hidden}.visual{display:grid;place-items:center;min-height:220px;border-right:1px solid var(--ink)}.visual span{color:var(--paper);font-size:clamp(30px,5vw,64px);font-weight:900;transform:rotate(-8deg)}.v1{background:linear-gradient(135deg,transparent 0 28%,var(--ink) 28% 42%,transparent 42%),var(--red)}.v2{background:repeating-linear-gradient(90deg,rgba(255,255,255,.18) 0 14px,transparent 14px 28px),var(--blue)}.v3{background:radial-gradient(circle at 25% 30%,var(--cyan) 0 18%,transparent 19%),radial-gradient(circle at 72% 74%,var(--lime) 0 20%,transparent 21%),var(--ink)}.copy{padding:clamp(20px,3vw,34px)}.work-actions a{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border:1px solid var(--line);text-decoration:none;background:rgba(255,255,255,.35)}.more{display:grid;grid-template-rows:0fr;transition:.2s}.more p{min-height:0;overflow:hidden;margin:0}.work.open .more{grid-template-rows:1fr;margin-top:18px}.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.contact,.qr{min-height:220px;padding:24px}.contact{display:flex;flex-direction:column;justify-content:space-between;text-decoration:none}.contact strong{font-size:clamp(26px,3vw,38px)}.qr{color:var(--paper);background:var(--ink)}.qr-art{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;width:116px;height:116px;padding:10px;margin-bottom:18px;background:var(--paper)}.qr-art i{background:var(--ink)}.qr-art i:nth-child(2),.qr-art i:nth-child(6),.qr-art i:nth-child(8){background:var(--red)}@media(max-width:940px){.top{grid-template-columns:1fr auto}.tabs{grid-column:1/-1;order:3}.tab{flex:1;min-width:0;padding:0 10px}.home.on,.about-grid,.work,.contact-grid{grid-template-columns:1fr}.strip{grid-template-columns:repeat(2,1fr)}.visual{border-right:0;border-bottom:1px solid var(--ink)}}@media(max-width:620px){.shell{padding:12px}.top,.stage{margin-top:12px}.tabs{display:grid;grid-template-columns:repeat(2,1fr)}.panel{padding:24px 18px}h1{font-size:clamp(56px,24vw,96px)}.lead{font-size:24px}.strip{grid-template-columns:1fr}.label{right:10px}.timeline div{grid-template-columns:1fr;gap:8px}}
-</style>
-</head>
-<body>
-<main class="shell">
-<header class="top"><a class="brand" href="#home"><span>LSZ</span><i></i></a><nav class="tabs"><button class="tab on" data-tab="home" data-i18n="nav.home">首页</button><button class="tab" data-tab="about" data-i18n="nav.about">关于我</button><button class="tab" data-tab="works" data-i18n="nav.works">我的作品</button><button class="tab" data-tab="contact" data-i18n="nav.contact">联系我</button></nav><button class="lang"><span data-i18n="language.current">中文</span><b>EN</b></button></header>
-<section class="stage"><div class="shape a"></div><div class="shape b"></div><div class="shape c"></div>
-<article class="panel home on" data-panel="home"><div><p class="eyebrow" data-i18n="home.eyebrow">个人品牌 / 视觉设计 / 产品体验</p><h1 data-i18n="home.name">李顺章</h1><p class="lead" data-i18n="home.tagline">用清晰的设计逻辑，构建有记忆点的数字体验。</p><div class="actions"><button class="btn dark" data-jump="works" data-i18n="home.ctaWorks">查看作品</button><button class="btn lime" data-jump="contact" data-i18n="home.ctaContact">获取联系</button></div></div><div class="portrait-wrap"><div class="portrait"><i class="ear l"></i><i class="ear r"></i><i class="neck"></i><i class="shirt"></i><i class="suit"></i><i class="head"></i><i class="hair"></i><i class="brow l"></i><i class="brow r"></i><i class="eye l"></i><i class="eye r"></i><i class="nose"></i><i class="mouth"></i></div><div class="label"><span data-i18n="home.portraitTag">形象识别</span><strong>2026</strong></div></div><aside class="strip"><div class="mini"><span>01</span><strong data-i18n="home.preview1Title">品牌视觉系统</strong><p data-i18n="home.preview1Text">从符号、色彩到落地物料的统一表达。</p></div><div class="mini"><span>02</span><strong data-i18n="home.preview2Title">产品体验设计</strong><p data-i18n="home.preview2Text">围绕用户路径建立清晰、可执行的界面方案。</p></div></aside></article>
-<article class="panel" data-panel="about"><div class="headblock"><p class="eyebrow" data-i18n="about.eyebrow">ABOUT / PROFILE</p><h2 data-i18n="about.title">关于我</h2><p data-i18n="about.lead">我关注视觉表达与产品体验之间的连接，希望把复杂信息转化成清楚、有秩序且有辨识度的界面。</p></div><div class="about-grid"><section class="story"><h3 data-i18n="about.storyTitle">个人故事</h3><p data-i18n="about.storyText">这里先放置占位简介：你可以补充教育背景、实习经历、创作兴趣，以及你为什么选择设计与产品方向。</p></section><section class="resume"><h3 data-i18n="about.resumeTitle">简洁履历</h3><div class="timeline"><div><time>2026</time><p data-i18n="about.timeline1">个人作品集搭建中，聚焦视觉设计与产品交互项目。</p></div><div><time>2025</time><p data-i18n="about.timeline2">参与课程、项目或实习经历，可在这里替换为真实内容。</p></div><div><time>Skill</time><p data-i18n="about.skills">视觉设计、用户研究、界面原型、信息架构、作品叙事。</p></div></div></section></div></article>
-<article class="panel" data-panel="works"><div class="headblock"><p class="eyebrow" data-i18n="works.eyebrow">WORKS / CASES</p><h2 data-i18n="works.title">我的作品</h2><p data-i18n="works.lead">当前使用占位作品，结构已支持展开说明与外部链接，后续可直接替换为真实项目。</p></div><div class="works"><section class="work"><div class="visual v1"><span>BRAND</span></div><div class="copy"><p class="meta" data-i18n="works.card1Meta">视觉设计 / 品牌系统</p><h3 data-i18n="works.card1Title">实验型品牌视觉提案</h3><p data-i18n="works.card1Short">以强符号、对比色块和网格秩序建立可延展的品牌视觉。</p><div class="work-actions"><button class="detail" data-i18n="works.expand">展开说明</button><a href="#" data-i18n="works.external">外部链接</a></div><div class="more"><p data-i18n="works.card1Detail">占位详情：可替换为项目背景、你的角色、设计过程、最终产出与复盘结果。</p></div></div></section><section class="work"><div class="visual v2"><span>UX</span></div><div class="copy"><p class="meta" data-i18n="works.card2Meta">产品交互 / 用户路径</p><h3 data-i18n="works.card2Title">学习工具体验优化</h3><p data-i18n="works.card2Short">梳理任务流程，重构页面层级，让学习记录和反馈更容易被理解。</p><div class="work-actions"><button class="detail" data-i18n="works.expand">展开说明</button><a href="#" data-i18n="works.external">外部链接</a></div><div class="more"><p data-i18n="works.card2Detail">占位详情：可补充研究洞察、用户旅程、线框图、视觉稿与可验证结果。</p></div></div></section><section class="work"><div class="visual v3"><span>POSTER</span></div><div class="copy"><p class="meta" data-i18n="works.card3Meta">视觉海报 / 图形实验</p><h3 data-i18n="works.card3Title">动态图形海报系列</h3><p data-i18n="works.card3Short">通过几何切割、文字层叠与节奏感排版探索更强的视觉记忆。</p><div class="work-actions"><button class="detail" data-i18n="works.expand">展开说明</button><a href="#" data-i18n="works.external">外部链接</a></div><div class="more"><p data-i18n="works.card3Detail">占位详情：适合放置系列创作说明、视觉规范、成图展示与延展场景。</p></div></div></section></div></article>
-<article class="panel" data-panel="contact"><div class="headblock"><p class="eyebrow" data-i18n="contact.eyebrow">CONTACT / NEXT STEP</p><h2 data-i18n="contact.title">联系我</h2><p data-i18n="contact.lead">如果你正在寻找视觉设计、产品交互或作品集相关合作，可以通过以下方式联系我。</p></div><div class="contact-grid"><a class="contact" href="tel:18553680407"><span data-i18n="contact.phoneLabel">联系电话</span><strong>18553680407</strong></a><div class="contact"><span data-i18n="contact.wechatLabel">微信</span><strong>18553680407</strong></div><div class="qr"><div class="qr-art"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><p data-i18n="contact.qrText">二维码位置已预留，替换真实二维码图片即可。</p></div></div></article>
-</section></main>
-<script>
-const t={zh:{"nav.home":"首页","nav.about":"关于我","nav.works":"我的作品","nav.contact":"联系我","language.current":"中文","home.eyebrow":"个人品牌 / 视觉设计 / 产品体验","home.name":"李顺章","home.tagline":"用清晰的设计逻辑，构建有记忆点的数字体验。","home.ctaWorks":"查看作品","home.ctaContact":"获取联系","home.portraitTag":"形象识别","home.preview1Title":"品牌视觉系统","home.preview1Text":"从符号、色彩到落地物料的统一表达。","home.preview2Title":"产品体验设计","home.preview2Text":"围绕用户路径建立清晰、可执行的界面方案。","about.eyebrow":"ABOUT / PROFILE","about.title":"关于我","about.lead":"我关注视觉表达与产品体验之间的连接，希望把复杂信息转化成清楚、有秩序且有辨识度的界面。","about.storyTitle":"个人故事","about.storyText":"这里先放置占位简介：你可以补充教育背景、实习经历、创作兴趣，以及你为什么选择设计与产品方向。","about.resumeTitle":"简洁履历","about.timeline1":"个人作品集搭建中，聚焦视觉设计与产品交互项目。","about.timeline2":"参与课程、项目或实习经历，可在这里替换为真实内容。","about.skills":"视觉设计、用户研究、界面原型、信息架构、作品叙事。","works.eyebrow":"WORKS / CASES","works.title":"我的作品","works.lead":"当前使用占位作品，结构已支持展开说明与外部链接，后续可直接替换为真实项目。","works.card1Meta":"视觉设计 / 品牌系统","works.card1Title":"实验型品牌视觉提案","works.card1Short":"以强符号、对比色块和网格秩序建立可延展的品牌视觉。","works.card1Detail":"占位详情：可替换为项目背景、你的角色、设计过程、最终产出与复盘结果。","works.card2Meta":"产品交互 / 用户路径","works.card2Title":"学习工具体验优化","works.card2Short":"梳理任务流程，重构页面层级，让学习记录和反馈更容易被理解。","works.card2Detail":"占位详情：可补充研究洞察、用户旅程、线框图、视觉稿与可验证结果。","works.card3Meta":"视觉海报 / 图形实验","works.card3Title":"动态图形海报系列","works.card3Short":"通过几何切割、文字层叠与节奏感排版探索更强的视觉记忆。","works.card3Detail":"占位详情：适合放置系列创作说明、视觉规范、成图展示与延展场景。","works.expand":"展开说明","works.collapse":"收起说明","works.external":"外部链接","contact.eyebrow":"CONTACT / NEXT STEP","contact.title":"联系我","contact.lead":"如果你正在寻找视觉设计、产品交互或作品集相关合作，可以通过以下方式联系我。","contact.phoneLabel":"联系电话","contact.wechatLabel":"微信","contact.qrText":"二维码位置已预留，替换真实二维码图片即可。"},en:{"nav.home":"Home","nav.about":"About","nav.works":"Works","nav.contact":"Contact","language.current":"English","home.eyebrow":"Personal Brand / Visual Design / Product Experience","home.name":"Li Shunzhang","home.tagline":"Designing memorable digital experiences with clear visual logic.","home.ctaWorks":"View Works","home.ctaContact":"Contact","home.portraitTag":"Identity","home.preview1Title":"Brand Visual System","home.preview1Text":"A unified language across symbols, color, and applied materials.","home.preview2Title":"Product Experience Design","home.preview2Text":"Clear and executable interface solutions shaped around user journeys.","about.eyebrow":"ABOUT / PROFILE","about.title":"About Me","about.lead":"I focus on the connection between visual expression and product experience, turning complex information into clear, ordered, and recognizable interfaces.","about.storyTitle":"Personal Story","about.storyText":"Placeholder profile: add your education, internships, creative interests, and why you chose design and product experience.","about.resumeTitle":"Compact Resume","about.timeline1":"Building a personal portfolio focused on visual design and product interaction projects.","about.timeline2":"Replace this line with real coursework, project experience, or internships.","about.skills":"Visual design, user research, interface prototyping, information architecture, portfolio storytelling.","works.eyebrow":"WORKS / CASES","works.title":"Selected Works","works.lead":"The current projects are placeholders. The structure already supports expandable notes and external links for future real cases.","works.card1Meta":"Visual Design / Brand System","works.card1Title":"Experimental Brand Visual Proposal","works.card1Short":"A scalable brand language built with bold symbols, contrast blocks, and grid discipline.","works.card1Detail":"Placeholder detail: replace this with project context, your role, design process, final outputs, and reflections.","works.card2Meta":"Product Interaction / User Flow","works.card2Title":"Learning Tool Experience Upgrade","works.card2Short":"Restructuring task flows and page hierarchy so learning records and feedback become easier to understand.","works.card2Detail":"Placeholder detail: add research insights, user journeys, wireframes, visual designs, and measurable outcomes.","works.card3Meta":"Poster Design / Graphic Experiment","works.card3Title":"Motion Graphic Poster Series","works.card3Short":"Exploring stronger visual memory through geometric cuts, layered type, and rhythmic composition.","works.card3Detail":"Placeholder detail: suitable for series statements, visual rules, final graphics, and extended applications.","works.expand":"Expand","works.collapse":"Collapse","works.external":"External Link","contact.eyebrow":"CONTACT / NEXT STEP","contact.title":"Contact","contact.lead":"If you are looking for visual design, product interaction, or portfolio-related collaboration, reach me through the channels below.","contact.phoneLabel":"Phone","contact.wechatLabel":"WeChat","contact.qrText":"QR code area is reserved. Replace it with your real WeChat QR image later."}};
-const tabs=document.querySelectorAll(".tab"),panels=document.querySelectorAll(".panel"),langBtn=document.querySelector(".lang");let lang=localStorage.getItem("portfolioLanguage")||"zh";function show(n){tabs.forEach(x=>x.classList.toggle("on",x.dataset.tab===n));panels.forEach(x=>x.classList.toggle("on",x.dataset.panel===n));history.replaceState(null,"",`#${n}`)}function setLang(l){lang=l;document.documentElement.lang=l==="zh"?"zh-CN":"en";document.title=l==="zh"?"李顺章 | 个人作品网站":"Li Shunzhang | Portfolio";document.querySelectorAll("[data-i18n]").forEach(el=>{const k=el.dataset.i18n;el.textContent=t[l][k]||el.textContent});document.querySelectorAll(".work").forEach(card=>{const b=card.querySelector(".detail");b.textContent=t[l][card.classList.contains("open")?"works.collapse":"works.expand"]});langBtn.querySelector("b").textContent=l==="zh"?"EN":"中文";localStorage.setItem("portfolioLanguage",l)}tabs.forEach(x=>x.onclick=()=>show(x.dataset.tab));document.querySelectorAll("[data-jump]").forEach(x=>x.onclick=()=>show(x.dataset.jump));langBtn.onclick=()=>setLang(lang==="zh"?"en":"zh");document.querySelectorAll(".detail").forEach(b=>b.onclick=()=>{const card=b.closest(".work");card.classList.toggle("open");b.textContent=t[lang][card.classList.contains("open")?"works.collapse":"works.expand"]});document.querySelectorAll(".work-actions a").forEach(a=>a.onclick=e=>e.preventDefault());const h=location.hash.slice(1);if(["home","about","works","contact"].includes(h))show(h);setLang(lang);
-</script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>李顺章 | 个人作品网站</title>
+    <meta
+      name="description"
+      content="李顺章的个人品牌与作品集网站，展示视觉设计、产品交互、个人经历与联系方式。"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="site-shell">
+      <div class="noise" aria-hidden="true"></div>
+      <header class="topbar">
+        <a class="brand-mark" href="#home" aria-label="返回首页">
+          <span>LSZ</span>
+          <i></i>
+        </a>
+
+        <nav class="tabs" aria-label="主要页面">
+          <button class="tab is-active" data-tab="home" data-i18n="nav.home">首页</button>
+          <button class="tab" data-tab="about" data-i18n="nav.about">关于我</button>
+          <button class="tab" data-tab="works" data-i18n="nav.works">我的作品</button>
+          <button class="tab" data-tab="contact" data-i18n="nav.contact">联系我</button>
+        </nav>
+
+        <button class="lang-toggle" type="button" aria-label="切换语言">
+          <span data-i18n="language.current">中文</span>
+          <b>EN</b>
+        </button>
+      </header>
+
+      <section class="stage">
+        <div class="shape shape-a" aria-hidden="true"></div>
+        <div class="shape shape-b" aria-hidden="true"></div>
+        <div class="shape shape-c" aria-hidden="true"></div>
+
+        <article id="home" class="panel home-panel is-active" data-panel="home">
+          <div class="hero-copy">
+            <p class="eyebrow" data-i18n="home.eyebrow">个人品牌 / 视觉设计 / 产品体验</p>
+            <h1 data-i18n="home.name">李顺章</h1>
+            <p class="hero-line" data-i18n="home.tagline">
+              用清晰的设计逻辑，构建有记忆点的数字体验。
+            </p>
+            <div class="hero-actions">
+              <button class="primary-action" data-jump="works" data-i18n="home.ctaWorks">
+                查看作品
+              </button>
+              <button class="ghost-action" data-jump="contact" data-i18n="home.ctaContact">
+                获取联系
+              </button>
+            </div>
+          </div>
+
+          <div class="portrait-wrap" aria-label="李顺章头像">
+            <div class="portrait-frame">
+              <img src="assets/avatar.jpg" alt="李顺章个人形象头像" />
+            </div>
+            <div class="portrait-label">
+              <span data-i18n="home.portraitTag">形象识别</span>
+              <strong>2026</strong>
+            </div>
+          </div>
+
+          <aside class="featured-strip" aria-label="代表作品预览">
+            <div class="mini-card">
+              <span>01</span>
+              <strong data-i18n="home.preview1Title">品牌视觉系统</strong>
+              <p data-i18n="home.preview1Text">从符号、色彩到落地物料的统一表达。</p>
+            </div>
+            <div class="mini-card">
+              <span>02</span>
+              <strong data-i18n="home.preview2Title">产品体验设计</strong>
+              <p data-i18n="home.preview2Text">围绕用户路径建立清晰、可执行的界面方案。</p>
+            </div>
+          </aside>
+        </article>
+
+        <article id="about" class="panel" data-panel="about">
+          <div class="section-head">
+            <p class="eyebrow" data-i18n="about.eyebrow">ABOUT / PROFILE</p>
+            <h2 data-i18n="about.title">关于我</h2>
+            <p data-i18n="about.lead">
+              我关注视觉表达与产品体验之间的连接，希望把复杂信息转化成清楚、有秩序且有辨识度的界面。
+            </p>
+          </div>
+
+          <div class="about-grid">
+            <section class="story-block">
+              <h3 data-i18n="about.storyTitle">个人故事</h3>
+              <p data-i18n="about.storyText">
+                这里先放置占位简介：你可以补充教育背景、实习经历、创作兴趣，以及你为什么选择设计与产品方向。
+              </p>
+            </section>
+
+            <section class="resume-block">
+              <h3 data-i18n="about.resumeTitle">简洁履历</h3>
+              <div class="timeline">
+                <div>
+                  <time>2026</time>
+                  <p data-i18n="about.timeline1">个人作品集搭建中，聚焦视觉设计与产品交互项目。</p>
+                </div>
+                <div>
+                  <time>2025</time>
+                  <p data-i18n="about.timeline2">参与课程、项目或实习经历，可在这里替换为真实内容。</p>
+                </div>
+                <div>
+                  <time>Skill</time>
+                  <p data-i18n="about.skills">
+                    视觉设计、用户研究、界面原型、信息架构、作品叙事。
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+        </article>
+
+        <article id="works" class="panel" data-panel="works">
+          <div class="section-head">
+            <p class="eyebrow" data-i18n="works.eyebrow">WORKS / CASES</p>
+            <h2 data-i18n="works.title">我的作品</h2>
+            <p data-i18n="works.lead">
+              当前使用占位作品，结构已支持展开说明与外部链接，后续可直接替换为真实项目。
+            </p>
+          </div>
+
+          <div class="work-list">
+            <section class="work-card">
+              <div class="work-visual visual-one" aria-hidden="true"><span>BRAND</span></div>
+              <div class="work-copy">
+                <p class="work-meta" data-i18n="works.card1Meta">视觉设计 / 品牌系统</p>
+                <h3 data-i18n="works.card1Title">实验型品牌视觉提案</h3>
+                <p data-i18n="works.card1Short">
+                  以强符号、对比色块和网格秩序建立可延展的品牌视觉。
+                </p>
+                <div class="work-controls">
+                  <button class="detail-toggle" data-i18n="works.expand">展开说明</button>
+                  <a href="#" aria-label="外部作品链接" data-i18n="works.external">外部链接</a>
+                </div>
+                <div class="work-detail">
+                  <p data-i18n="works.card1Detail">
+                    占位详情：可替换为项目背景、你的角色、设计过程、最终产出与复盘结果。
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <section class="work-card">
+              <div class="work-visual visual-two" aria-hidden="true"><span>UX</span></div>
+              <div class="work-copy">
+                <p class="work-meta" data-i18n="works.card2Meta">产品交互 / 用户路径</p>
+                <h3 data-i18n="works.card2Title">学习工具体验优化</h3>
+                <p data-i18n="works.card2Short">
+                  梳理任务流程，重构页面层级，让学习记录和反馈更容易被理解。
+                </p>
+                <div class="work-controls">
+                  <button class="detail-toggle" data-i18n="works.expand">展开说明</button>
+                  <a href="#" aria-label="外部作品链接" data-i18n="works.external">外部链接</a>
+                </div>
+                <div class="work-detail">
+                  <p data-i18n="works.card2Detail">
+                    占位详情：可补充研究洞察、用户旅程、线框图、视觉稿与可验证结果。
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <section class="work-card">
+              <div class="work-visual visual-three" aria-hidden="true"><span>POSTER</span></div>
+              <div class="work-copy">
+                <p class="work-meta" data-i18n="works.card3Meta">视觉海报 / 图形实验</p>
+                <h3 data-i18n="works.card3Title">动态图形海报系列</h3>
+                <p data-i18n="works.card3Short">
+                  通过几何切割、文字层叠与节奏感排版探索更强的视觉记忆。
+                </p>
+                <div class="work-controls">
+                  <button class="detail-toggle" data-i18n="works.expand">展开说明</button>
+                  <a href="#" aria-label="外部作品链接" data-i18n="works.external">外部链接</a>
+                </div>
+                <div class="work-detail">
+                  <p data-i18n="works.card3Detail">
+                    占位详情：适合放置系列创作说明、视觉规范、成图展示与延展场景。
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+        </article>
+
+        <article id="contact" class="panel" data-panel="contact">
+          <div class="section-head">
+            <p class="eyebrow" data-i18n="contact.eyebrow">CONTACT / NEXT STEP</p>
+            <h2 data-i18n="contact.title">联系我</h2>
+            <p data-i18n="contact.lead">
+              如果你正在寻找视觉设计、产品交互或作品集相关合作，可以通过以下方式联系我。
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <a class="contact-card" href="tel:18553680407">
+              <span data-i18n="contact.phoneLabel">联系电话</span>
+              <strong>18553680407</strong>
+            </a>
+            <div class="contact-card">
+              <span data-i18n="contact.wechatLabel">微信</span>
+              <strong>18553680407</strong>
+            </div>
+            <div class="qr-card" aria-label="微信二维码占位">
+              <div class="qr-art">
+                <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+              </div>
+              <p data-i18n="contact.qrText">二维码位置已预留，替换真实二维码图片即可。</p>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
 </html>
