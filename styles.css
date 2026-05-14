@@ -346,6 +346,8 @@ h3 {
 .portrait-frame {
   position: relative;
   z-index: 1;
+  display: grid;
+  place-items: center;
   aspect-ratio: 1 / 1;
   overflow: hidden;
   border: 1px solid rgba(23, 22, 20, 0.3);
@@ -361,6 +363,7 @@ h3 {
   position: absolute;
   z-index: 0;
   border: 1px solid rgba(23, 22, 20, 0.22);
+  display: none;
 }
 
 .portrait-frame::before {
@@ -383,8 +386,9 @@ h3 {
 }
 
 .portrait-frame img {
-  position: relative;
-  z-index: 1;
+  position: absolute;
+  inset: 0;
+  z-index: 2;
   display: block;
   width: 100%;
   height: 100%;
